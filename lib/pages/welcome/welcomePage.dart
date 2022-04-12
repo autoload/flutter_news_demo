@@ -78,7 +78,7 @@ class WelcomePage extends StatelessWidget {
   }
 
   /// 开始按钮
-  Widget _buildStartButton() {
+  Widget _buildStartButton(BuildContext context) {
     return Container(
       width: duSetWidth(295),
       height: duSetHeight(44),
@@ -90,7 +90,12 @@ class WelcomePage extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(duSetWidth(6))),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(
+            context,
+            "/sign-in",
+          );
+        },
       ),
     );
   }
@@ -131,7 +136,7 @@ class WelcomePage extends StatelessWidget {
               40,
             ),
             Spacer(),
-            _buildStartButton(),
+            _buildStartButton(context),
           ],
         ),
       ),

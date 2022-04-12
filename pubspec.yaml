@@ -49,6 +49,9 @@ dev_dependencies:
   # 屏幕适配
   flutter_screenutil: ^5.1.0
 
+  # 提示框
+  fluttertoast: ^8.0.9
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
